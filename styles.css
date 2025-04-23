@@ -1,0 +1,72 @@
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+.theater {
+     padding: 48px 0;
+     text-align: center;
+     background-color: rgb(16, 13, 19);
+     font-family: 'Poppins';
+}
+.heading {
+     color: rgb(237, 232, 240);
+     font-size: 20px;
+     text-transform: uppercase;
+     padding-bottom: 20px;
+     letter-spacing: 2px;
+}
+
+.video {
+     display: inline-block;
+     margin-bottom: 20px;
+}
+
+.vid {
+     width: 68%;
+     height: auto;
+     padding: 4px;
+     background-color:rgb(209, 146, 240);
+     border-radius: 16px;
+     box-shadow: 0px 4px 16px rgba(242, 233, 251, 0.2);
+}
+
+
+.btn { 
+     text-decoration: none;
+     color: rgb(21, 17, 24);
+     font-size: 16px;
+          &:hover {
+          color: rgb(252, 250, 246);
+          }
+    
+}   
+
+.button {
+     background-color: rgb(243, 240, 234);
+     padding: 12px 16px;
+     margin: 0 8px;
+     border-radius: 12px;
+
+     &:hover {
+          background-color: rgb(209, 146, 240);
+          font-weight: 600;
+     }
+}
+
+#thankyou:target {
+     display: block;
+}
+
+.blink {
+     animation: blink 1s infinite;
+}
+@keyframes blink {
+     0%, 100%
+     {
+          opacity: 1;
+     }
+     50% {
+          opacity: 0.85;
+     }
+}
